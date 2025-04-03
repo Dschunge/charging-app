@@ -1,0 +1,16 @@
+services:
+  nextjs-app:
+    container_name: charging-app
+    restart: always
+    ports:
+      - "3100:3100"
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: charging-app:0.1
+    pull_policy: always
+    #env_file:
+    #  - stack.env
+    environment:
+      - NEXT_PUBLIC_PAYPAL_CLIENT_ID=${NEXT_PUBLIC_PAYPAL_CLIENT_ID}
+      - NEXT_PUBLIC_PAYPAL_SECRET=${NEXT_PUBLIC_PAYPAL_SECRET}

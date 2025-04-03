@@ -1,0 +1,5 @@
+
+
+REST API Command
+
+curl -X POST -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIxNjQ5MDM2MGFhYjA0ZTIwYWQxZGEwOTg3YzNkODVlYiIsImlhdCI6MTc0MTQ0NzExMCwiZXhwIjoyMDU2ODA3MTEwfQ.W0-obBF5Rb5l0jUyDzsf_8XMDGjQdemFpnEVyyKQC5s" http://172.16.8.139:8123/api/webhook/-k-vD1UuMylH4eyXvG1ZjzXkV

@@ -1,0 +1,8 @@
+# Build the image
+docker build -t charging-app .
+
+# Run the container
+docker run -p 3000:3000 charging-app
+
+docker compose up --force-recreate --build -d
+
