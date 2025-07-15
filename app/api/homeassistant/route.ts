@@ -5,8 +5,10 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
     const { webhookID } = await request.json();
     console.log({ webhookID })
+    //const url = `http://172.16.8.139:8123/api/webhook/${webhookID}`
+    const url = `http://172.16.9.13:8123/api/webhook/${webhookID}`
     try {
-        const response = await fetch(`http://172.16.8.139:8123/api/webhook/${webhookID}`, {
+        const response = await fetch(url, {
             method: 'POST',
             headers: {
                 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIxNjQ5MDM2MGFhYjA0ZTIwYWQxZGEwOTg3YzNkODVlYiIsImlhdCI6MTc0MTQ0NzExMCwiZXhwIjoyMDU2ODA3MTEwfQ.W0-obBF5Rb5l0jUyDzsf_8XMDGjQdemFpnEVyyKQC5s'
